@@ -1,15 +1,15 @@
-// Miguel Mendoza
+// Miguel Mendoza Javier Ramirez
 //9 - 23 - 25
 // Card game with OOP
 
 
-package cardGame;
+// package CardGame;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-
+//Adds cardgame class
 public class CardGame {
 
 	private static ArrayList<Card> deckOfCards = new ArrayList<Card>();
@@ -18,6 +18,7 @@ public class CardGame {
 
 	public static void main(String[] args) {
 
+		//
 		Scanner input = null;
 		try {
 			input = new Scanner(new File("cards.txt"));
@@ -27,14 +28,17 @@ public class CardGame {
 			e.printStackTrace();
 		}
 
+
 		while(input.hasNext()) {
 			String[] fields  = input.nextLine().split(",");
 			//	public Card(String cardSuit, String cardName, int cardValue, String cardPicture) {
+			//We need to create the constructor
 			Card newCard = new Card(fields[0], fields[1].trim(),
 					Integer.parseInt(fields[2].trim()), fields[3]);
 			deckOfCards.add(newCard);	
 		}
 
+        //shuffles deck
 		shuffle();
 
 		//for(Card c: deckOfCards)
@@ -53,6 +57,7 @@ public class CardGame {
 
 	}//end main
 
+    
 	public static void shuffle() {
 
 		//shuffling the cards by deleting and reinserting
