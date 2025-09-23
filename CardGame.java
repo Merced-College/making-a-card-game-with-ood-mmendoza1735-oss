@@ -1,3 +1,8 @@
+// Miguel Mendoza
+//9 - 23 - 25
+// Card game with OOP
+
+
 package cardGame;
 
 import java.io.File;
