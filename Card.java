@@ -11,6 +11,38 @@ public class Card {
 
     // set/get methods
 
+    public String getCardSuit() {
+    return cardSuit;
+}
+
+    public void setCardSuit(String cardSuit) {
+        this.cardSuit = cardSuit;
+    }
+
+    public String getCardName() {
+        return cardName;
+    }
+
+    public void setCardName(String cardName) {
+        this.cardName = cardName;
+    }
+
+    public String getCardPicture() {
+        return cardPicture;
+    }
+
+    public void setCardPicture(String cardPicture) {
+        this.cardPicture = cardPicture;
+    }
+
+    public int getCardValue() {
+        return cardValue;
+    }
+
+    public void setCardValue(int cardValue) {
+        this.cardValue = cardValue;
+    }
+
     //Constructor
     public Card(String cardSuit, String cardName, int cardValue, String cardPicture) {
         this.cardSuit = cardSuit;
