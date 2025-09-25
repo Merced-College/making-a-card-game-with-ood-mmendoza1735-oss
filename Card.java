@@ -12,8 +12,8 @@ public class Card {
     // set/get methods
 
     public String getCardSuit() {
-    return cardSuit;
-}
+        return cardSuit;
+    }
 
     public void setCardSuit(String cardSuit) {
         this.cardSuit = cardSuit;
